@@ -58,7 +58,7 @@ The system is designed primarily for librarians and provides functionality for m
 
 A short demonstration of the current version of the application will be available here.
 
-<!-- Demo video will be added here -->
+https://github.com/user-attachments/assets/4cce7e9c-0777-4a21-b581-37d305da1589
 
 ## Running the Application
 

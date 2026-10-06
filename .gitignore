@@ -1,0 +1,62 @@
+target/
+!.mvn/wrapper/maven-wrapper.jar
+!**/src/main/**/target/
+!**/src/test/**/target/
+.kotlin
+
+### IntelliJ IDEA ###
+.idea/modules.xml
+.idea/jarRepositories.xml
+.idea/compiler.xml
+.idea/libraries/
+*.iws
+*.iml
+*.ipr
+
+### Eclipse ###
+.apt_generated
+.classpath
+.factorypath
+.project
+.settings
+.springBeans
+.sts4-cache
+
+### NetBeans ###
+/nbproject/private/
+/nbbuild/
+/dist/
+/nbdist/
+/.nb-gradle/
+build/
+!**/src/main/**/build/
+!**/src/test/**/build/
+
+### VS Code ###
+.vscode/
+
+### Mac OS ###
+.DS_Store
+
+# Local aplication settings
+app/data/app-settings.properties
+app/data/database.properties
+
+# Local database files
+app/data/*mv.db
+app/data/*trace.db
+
+#Runtime / backup files
+app/data/*.bin
+
+# Log files
+*.log
+*.log.*
+log.xml
+log.xml.*
+
+# Visual Studio
+.vs/
+
+#Generated classpath 
+app/cp.txt

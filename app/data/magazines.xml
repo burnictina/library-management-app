@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<magazines>
+    <magazine>
+        <title>National Geographic</title>
+        <publisher>National Geographic Society</publisher>
+        <issueNumber>242</issueNumber>
+        <publishingYear>2024</publishingYear>
+        <publishingMonth>January</publishingMonth>
+        <category>Science</category>
+        <borrowed>false</borrowed>
+    </magazine>
+    <magazine>
+        <title>Time</title>
+        <publisher>Time USA LLC</publisher>
+        <issueNumber>56</issueNumber>
+        <publishingYear>2023</publishingYear>
+        <publishingMonth>December</publishingMonth>
+        <category>News</category>
+        <borrowed>false</borrowed>
+    </magazine>
+    <magazine>
+        <title>Forbes</title>
+        <publisher>Forbes Media LLC</publisher>
+        <issueNumber>78</issueNumber>
+        <publishingYear>2023</publishingYear>
+        <publishingMonth>November</publishingMonth>
+        <category>Business</category>
+        <borrowed>false</borrowed>
+    </magazine>
+</magazines>

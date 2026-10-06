@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.StackPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<BorderPane prefHeight="768.0" prefWidth="1024.0" userData="settings" xmlns="http://javafx.com/javafx/25" xmlns:fx="http://javafx.com/fxml/1" fx:controller="hr.projekt_lab.controlleri.SettingsController">
+    <left>
+        <fx:include source="sidebar-component.fxml" />
+    </left>
+    <center>
+        <StackPane BorderPane.alignment="CENTER">
+            <children>
+                <VBox alignment="TOP_CENTER" maxWidth="860.0" spacing="24.0">
+                    <padding>
+                        <Insets bottom="20.0" left="20.0" right="20.0" top="20.0" />
+                    </padding>
+                    <children>
+                        <Text strokeType="OUTSIDE" strokeWidth="0.0" styleClass="screen-title" text="%settings.title" />
+                        <VBox alignment="TOP_LEFT" prefWidth="500.0" spacing="12.0">
+                            <children>
+                                <GridPane hgap="14.0" vgap="18.0">
+                                    <columnConstraints>
+                                        <ColumnConstraints halignment="RIGHT" minWidth="120.0" prefWidth="140.0" />
+                                        <ColumnConstraints hgrow="ALWAYS" minWidth="240.0" prefWidth="320.0" />
+                                    </columnConstraints>
+                                    <children>
+                                        <Text strokeType="OUTSIDE" strokeWidth="0.0" text="%settings.language" GridPane.valignment="CENTER">
+                                            <font>
+                                                <Font size="18.0" />
+                                            </font>
+                                        </Text>
+                                        <ComboBox fx:id="languageComboBox" prefWidth="320.0" GridPane.columnIndex="1" />
+                                        <Text strokeType="OUTSIDE" strokeWidth="0.0" text="%settings.export_dir" GridPane.rowIndex="1" GridPane.valignment="CENTER">
+                                            <font>
+                                                <Font size="18.0" />
+                                            </font>
+                                        </Text>
+                                        <TextField fx:id="exportDirField" prefWidth="320.0" promptText="%settings.export_dir_hint" GridPane.columnIndex="1" GridPane.rowIndex="1" />
+                                        <Text strokeType="OUTSIDE" strokeWidth="0.0" text="%settings.username" GridPane.rowIndex="2" GridPane.valignment="CENTER">
+                                            <font>
+                                                <Font size="18.0" />
+                                            </font>
+                                        </Text>
+                                        <TextField fx:id="usernameField" prefWidth="320.0" promptText="%settings.username_hint" GridPane.columnIndex="1" GridPane.rowIndex="2" />
+                                    </children>
+                                </GridPane>
+                                <Button mnemonicParsing="false" onAction="#saveSettingsButtonOnAction" text="%settings.save">
+                                    <font>
+                                        <Font size="14.0" />
+                                    </font>
+                                </Button>
+                                <Button mnemonicParsing="false" onAction="#manageLibrariansButtonOnAction" text="%settings.manage_librarians">
+                                    <font>
+                                        <Font size="14.0" />
+                                    </font>
+                                </Button>
+                            </children>
+                        </VBox>
+                    </children>
+                </VBox>
+            </children>
+        </StackPane>
+    </center>
+</BorderPane>

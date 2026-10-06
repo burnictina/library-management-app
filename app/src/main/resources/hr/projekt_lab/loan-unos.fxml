@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.DatePicker?>
+<?import javafx.scene.control.RadioButton?>
+<?import javafx.scene.control.ToggleGroup?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.StackPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="768.0" prefWidth="1024.0" userData="loans" xmlns="http://javafx.com/javafx/25" xmlns:fx="http://javafx.com/fxml/1" fx:controller="hr.projekt_lab.controlleri.LoanUnosController">
+   <fx:define>
+      <ToggleGroup fx:id="typeToggleGroup" />
+   </fx:define>
+   <left>
+      <fx:include source="sidebar-component.fxml" />
+   </left>
+   <center>
+      <StackPane BorderPane.alignment="CENTER">
+         <children>
+            <VBox alignment="TOP_CENTER" maxWidth="860.0" spacing="24.0">
+               <padding>
+                  <Insets bottom="20.0" left="20.0" right="20.0" top="20.0" />
+               </padding>
+               <children>
+                  <Text fx:id="titleText" strokeType="OUTSIDE" strokeWidth="0.0" styleClass="screen-title" />
+                  <VBox alignment="TOP_LEFT" prefWidth="500.0" spacing="12.0">
+                     <children>
+                        <GridPane hgap="14.0" vgap="18.0">
+                           <columnConstraints>
+                              <ColumnConstraints halignment="RIGHT" minWidth="120.0" prefWidth="140.0" />
+                              <ColumnConstraints hgrow="ALWAYS" minWidth="240.0" prefWidth="320.0" />
+                           </columnConstraints>
+                           <children>
+                              <Text strokeType="OUTSIDE" strokeWidth="0.0" text="%loan.member" GridPane.valignment="CENTER">
+                                 <font>
+                                    <Font size="18.0" />
+                                 </font>
+                              </Text>
+                              <ComboBox fx:id="memberComboBox" prefWidth="320.0" GridPane.columnIndex="1" />
+                              <Text fx:id="publicationTypeLabel" strokeType="OUTSIDE" strokeWidth="0.0" GridPane.rowIndex="1" GridPane.valignment="CENTER">
+                                 <font>
+                                    <Font size="18.0" />
+                                 </font>
+                              </Text>
+                              <HBox alignment="CENTER_LEFT" spacing="16.0" GridPane.columnIndex="1" GridPane.rowIndex="1">
+                                 <children>
+                                    <RadioButton fx:id="bookRadioButton" toggleGroup="$typeToggleGroup" />
+                                    <RadioButton fx:id="magazineRadioButton" toggleGroup="$typeToggleGroup" />
+                                 </children>
+                              </HBox>
+                              <Text strokeType="OUTSIDE" strokeWidth="0.0" text="%loan.publication" GridPane.rowIndex="2" GridPane.valignment="CENTER">
+                                 <font>
+                                    <Font size="18.0" />
+                                 </font>
+                              </Text>
+                              <ComboBox fx:id="bookComboBox" prefWidth="320.0" GridPane.columnIndex="1" GridPane.rowIndex="2" />
+                              <ComboBox fx:id="magazineComboBox" managed="false" prefWidth="320.0" visible="false" GridPane.columnIndex="1" GridPane.rowIndex="2" />
+                              <Text strokeType="OUTSIDE" strokeWidth="0.0" text="%loan.loan_date" GridPane.rowIndex="3" GridPane.valignment="CENTER">
+                                 <font>
+                                    <Font size="18.0" />
+                                 </font>
+                              </Text>
+                              <DatePicker fx:id="loanDatePicker" prefWidth="320.0" GridPane.columnIndex="1" GridPane.rowIndex="3" />
+                              <Text strokeType="OUTSIDE" strokeWidth="0.0" text="%loan.return_date" GridPane.rowIndex="4" GridPane.valignment="CENTER">
+                                 <font>
+                                    <Font size="18.0" />
+                                 </font>
+                              </Text>
+                              <DatePicker fx:id="returnDatePicker" prefWidth="320.0" GridPane.columnIndex="1" GridPane.rowIndex="4" />
+                           </children>
+                        </GridPane>
+                        <Button fx:id="saveLoanButton" mnemonicParsing="false" onAction="#saveLoanButtonAction">
+                           <font>
+                              <Font size="14.0" />
+                           </font>
+                        </Button>
+                     </children>
+                  </VBox>
+               </children>
+            </VBox>
+         </children>
+      </StackPane>
+   </center>
+</BorderPane>

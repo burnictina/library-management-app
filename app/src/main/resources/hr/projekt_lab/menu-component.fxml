@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Menu?>
+<?import javafx.scene.control.MenuBar?>
+<?import javafx.scene.control.MenuItem?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.control.SeparatorMenuItem?>
+
+<AnchorPane prefHeight="30.0" maxWidth="Infinity" xmlns="http://javafx.com/javafx/25" xmlns:fx="http://javafx.com/fxml/1" fx:controller="hr.projekt_lab.controlleri.MenuController">
+
+    <MenuBar AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0" AnchorPane.bottomAnchor="0.0">
+        <menus>
+                        <Menu mnemonicParsing="false" text="%menu.display">
+                <items>
+                                        <MenuItem mnemonicParsing="false" onAction="#showBooksScreen" text="%menu.display.books" />
+                                        <MenuItem mnemonicParsing="false" onAction="#showAuthorScreen" text="%menu.display.authors" />
+                                        <MenuItem mnemonicParsing="false" onAction="#showMagazineScreen" text="%menu.display.magazines" />
+                             <MenuItem mnemonicParsing="false" onAction="#showLoansScreen" text="%menu.display.loans" />
+                             <MenuItem mnemonicParsing="false" onAction="#showMembersScreen" text="%menu.display.members" />
+                             <MenuItem mnemonicParsing="false" onAction="#showReservationsScreen" text="%menu.display.reservations" />
+                </items>
+            </Menu>
+                 <Menu mnemonicParsing="false" text="%menu.input">
+           <items>
+                         <MenuItem mnemonicParsing="false" onAction="#showBookInputScreen" text="%menu.input.books" />
+                             <MenuItem mnemonicParsing="false" onAction="#showAuthorInputScreen" text="%menu.input.authors" />
+                             <MenuItem mnemonicParsing="false" onAction="#showMagazineInputScreen" text="%menu.input.magazines" />
+                             <MenuItem mnemonicParsing="false" onAction="#showLoansInputScreen" text="%menu.input.loans" />
+                             <MenuItem mnemonicParsing="false" onAction="#showMemberInputScreen" text="%menu.input.members" />
+           </items>
+         </Menu>
+                                                <Menu mnemonicParsing="false" text="%menu.settings">
+                                <items>
+                                                                                <MenuItem mnemonicParsing="false" onAction="#showSettingsScreen" text="%menu.settings.app" />
+                                        <SeparatorMenuItem />
+                                                                                <MenuItem mnemonicParsing="false" onAction="#switchLanguageToCroatian" text="%menu.settings.lang_hr" />
+                                                                                <MenuItem mnemonicParsing="false" onAction="#switchLanguageToEnglish" text="%menu.settings.lang_en" />
+                                </items>
+                        </Menu>
+        </menus>
+    </MenuBar>
+
+</AnchorPane>

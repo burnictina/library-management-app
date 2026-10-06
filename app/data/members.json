@@ -1,0 +1,61 @@
+[ {
+  "firstName" : "Marko",
+  "lastName" : "Marić",
+  "id" : "MBR001",
+  "memberDate" : "2022-05-10",
+  "numberOfLoans" : 3
+}, {
+  "firstName" : "Ana",
+  "lastName" : "Anić",
+  "id" : "MBR002",
+  "memberDate" : "2023-03-01",
+  "numberOfLoans" : 3
+}, {
+  "firstName" : "Anja",
+  "lastName" : "Anić",
+  "id" : "MBR003",
+  "memberDate" : "2026-01-02",
+  "numberOfLoans" : 0
+}, {
+  "firstName" : "Marijo",
+  "lastName" : "Marić",
+  "id" : "MBR004",
+  "memberDate" : "2026-01-02",
+  "numberOfLoans" : 0
+}, {
+  "firstName" : "Luka",
+  "lastName" : "Lukić",
+  "id" : "MBR005",
+  "memberDate" : "2026-01-02",
+  "numberOfLoans" : 0
+}, {
+  "firstName" : "Ivan",
+  "lastName" : "Horvat",
+  "id" : "MBR006",
+  "memberDate" : "2026-01-02",
+  "numberOfLoans" : 1
+}, {
+  "firstName" : "Ivana",
+  "lastName" : "Ivanić",
+  "id" : "MBR007",
+  "memberDate" : "2026-01-02",
+  "numberOfLoans" : 0
+}, {
+  "firstName" : "Ivana",
+  "lastName" : "Horvat",
+  "id" : "MBR008",
+  "memberDate" : "2026-01-02",
+  "numberOfLoans" : 0
+}, {
+  "firstName" : "Marija",
+  "lastName" : "Marić",
+  "id" : "MBR009",
+  "memberDate" : "2026-01-02",
+  "numberOfLoans" : 0
+}, {
+  "firstName" : "Marija",
+  "lastName" : "Horvat",
+  "id" : "MBR010",
+  "memberDate" : "2026-01-02",
+  "numberOfLoans" : 0
+} ]
